@@ -26,5 +26,5 @@ jobs:
 
       - name: Validate Project Structure
         run: |
-          echo "✅ Salesforce project structure:"
-          ls force-app/main/default/
+          echo "✅ Repo contents:"
+          ls -la
