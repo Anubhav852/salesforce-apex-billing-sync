@@ -19,7 +19,7 @@ public class BillingSyncQueueable implements Queueable, Database.AllowsCallouts 
             try {
                 Http http = new Http();
                 HttpRequest request = new HttpRequest();
-                request.setEndpoint('callout:MockBillingGateway/v1/charges');
+                request.setEndpoint('callout:MockBillingGateway/posts');
                 request.setMethod('POST');
                 request.setHeader('Content-Type', 'application/json');
                 
