@@ -33,7 +33,7 @@ public class BillingSyncQueueable implements Queueable, Database.AllowsCallouts 
                 HttpResponse response = http.send(request);
                 
                 Subscription__c subToUpdate = new Subscription__c(Id = sub.Id);
-                if (response.getStatusCode() == 200) {
+                if (response.getStatusCode() == 200 || response.getStatusCode() == 201)  {
                     subToUpdate.Sync_Status__c = 'Synced';
                 } else {
                     subToUpdate.Sync_Status__c = 'Failed';
