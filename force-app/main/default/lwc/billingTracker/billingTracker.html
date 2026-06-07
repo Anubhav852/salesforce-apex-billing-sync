@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Billing Sync Tracker" icon-name="custom:custom18">
+        
+        <!-- Loading State -->
+        <template if:true={isLoading}>
+            <div class="slds-p-around_medium slds-align_absolute-center">
+                <lightning-spinner alternative-text="Loading..." size="small"></lightning-spinner>
+            </div>
+        </template>
+
+        <!-- Data State -->
+        <template if:false={isLoading}>
+            <div class="slds-p-around_medium">
+
+                <div class="tracker-container">
+                    <!-- Subscription Info -->
+                    <div class="info-row">
+                        <span class="info-label">Subscription</span>
+                        <span class="info-value">{subscriptionName}</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">Total Amount</span>
+                        <span class="info-value">${totalAmount}</span>
+                    </div>
+
+                    <!-- Sync Status Badge -->
+                    <div class="info-row">
+                        <span class="info-label">Sync Status</span>
+                        <span class={statusClass}>
+                            {statusIcon} {syncStatus}
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </template>
+
+    </lightning-card>
+</template>

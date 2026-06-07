@@ -1,0 +1,46 @@
+.tracker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+
+.info-value {
+    color: #111;
+    font-size: 14px;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.synced {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.failed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
