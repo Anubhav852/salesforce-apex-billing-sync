@@ -1,4 +1,4 @@
-# 🔄 Salesforce Apex Billing Sync Engine
+#  Salesforce Apex Billing Sync Engine
 
 ![Salesforce](https://img.shields.io/badge/Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white)
 ![Apex](https://img.shields.io/badge/Apex-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white)
@@ -9,13 +9,13 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates enterprise-grade Salesforce development patterns including bulkified Apex Triggers, asynchronous Queueable jobs, secure REST API integration via Named Credentials, and a reactive Lightning Web Component — all following Salesforce Governor Limit best practices.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Subscription__c Record Updated
@@ -42,7 +42,7 @@ No page refresh needed
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Technology | Usage |
 |------------|-------|
@@ -56,7 +56,7 @@ No page refresh needed
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 force-app/main/default/
 ├── objects/
@@ -138,7 +138,7 @@ sf project deploy start --source-dir force-app --target-org myDevOrg
 ##  Author
 
 **Anubhav** — Salesforce Developer  
-🔗 [GitHub](https://github.com/Anubhav852) | 💼 [LinkedIn](#)
+ [GitHub](https://github.com/Anubhav852) |  [LinkedIn](#)
 
 ---
 
