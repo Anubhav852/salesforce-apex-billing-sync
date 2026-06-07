@@ -17,6 +17,7 @@ This project demonstrates enterprise-grade Salesforce development patterns inclu
 
 ## 🏗️ Architecture
 
+```
 Subscription__c Record Updated
 │
 ▼
@@ -37,7 +38,7 @@ billingTracker LWC (Wire Service)
 Reactively displays Sync_Status__c
 Color coded status badge
 No page refresh needed
-
+```
 
 ---
 
